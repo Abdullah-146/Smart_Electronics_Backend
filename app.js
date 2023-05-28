@@ -26,6 +26,11 @@ const payment = require("./routes/payment");
 const order = require("./routes/order");
 const category = require("./routes/category");
 
+//get route hello world
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
 app.use("/api/v1", products);
 app.use("/api/v1", auth);
 app.use("/api/v1", payment);
